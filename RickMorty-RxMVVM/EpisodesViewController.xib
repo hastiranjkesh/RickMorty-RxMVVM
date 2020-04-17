@@ -9,6 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EpisodesViewController" customModule="RickMorty_RxMVVM" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="tUx-dC-MNb" id="1Sb-ar-HSG"/>
                 <outlet property="searchBar" destination="YDf-he-Ws5" id="s3o-WO-HiY"/>
                 <outlet property="tableView" destination="yCO-aQ-AbI" id="3rg-H4-rKc"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -32,19 +33,24 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </tableView>
                 </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="tUx-dC-MNb">
+                    <rect key="frame" x="188.5" y="462.5" width="37" height="37"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="YDf-he-Ws5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="58l-dq-gXj"/>
+                <constraint firstItem="tUx-dC-MNb" firstAttribute="centerX" secondItem="yCO-aQ-AbI" secondAttribute="centerX" id="I3I-24-4Ru"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="yCO-aQ-AbI" secondAttribute="bottom" id="TWq-Ar-8NH"/>
                 <constraint firstItem="YDf-he-Ws5" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="W2b-qb-r7v"/>
                 <constraint firstItem="YDf-he-Ws5" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="XYd-SZ-Wet"/>
                 <constraint firstItem="yCO-aQ-AbI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="aRE-Cz-p7G"/>
+                <constraint firstItem="tUx-dC-MNb" firstAttribute="centerY" secondItem="yCO-aQ-AbI" secondAttribute="centerY" id="cMn-Wd-mec"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yCO-aQ-AbI" secondAttribute="trailing" id="ivc-Ue-HlD"/>
                 <constraint firstItem="yCO-aQ-AbI" firstAttribute="top" secondItem="YDf-he-Ws5" secondAttribute="bottom" id="m4B-vm-Jzw"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <point key="canvasLocation" x="139" y="153"/>
+            <point key="canvasLocation" x="137.68115942028987" y="152.67857142857142"/>
         </view>
     </objects>
 </document>

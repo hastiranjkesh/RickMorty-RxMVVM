@@ -10,4 +10,9 @@ import Foundation
 
 final class EpisodesViewModel {
     
+    var remoteRepository: RemoteRepository
+    
+    init(remoteRepository: RemoteRepository) {
+        self.remoteRepository = remoteRepository
+    }
 }
