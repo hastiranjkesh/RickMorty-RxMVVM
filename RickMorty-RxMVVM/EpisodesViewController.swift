@@ -54,9 +54,18 @@ final class EpisodesViewController: UIViewController {
         }.disposed(by: disposeBag)
         
         tableView.rx.setDelegate(self).disposed(by: disposeBag)
+        
+        searchBar.rx.text
+            .orEmpty
+            .distinctUntilChanged()
+            .throttle(RxTimeInterval.milliseconds(300), scheduler: MainScheduler.instance).subscribe(onNext: { [weak self] query in
+                guard let self = self else { return }
+                self.viewModel.search(query: query)
+            }).disposed(by: disposeBag)
     }
 }
 
+// MARK: - UITableViewDelegate
 extension EpisodesViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 84

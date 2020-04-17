@@ -35,4 +35,22 @@ final class EpisodesViewModel {
                                         }
         })
     }
+    
+    func search(query: String) {
+        loading.onNext(true)
+        remoteRepository.getEpisodes(path: "https://rickandmortyapi.com/api/episode?name=" + query,
+                                     completion: {[weak self] result in
+                                        guard let self = self else { return }
+                                        self.loading.onNext(false)
+                                        switch result {
+                                        case .success(let episodesList):
+                                            self.episodes.onNext(episodesList.results)
+                                        case .failure(let err):
+                                            print(err)
+                                            self.error.onNext(true)
+                                        }
+                                        
+                                        
+        })
+    }
 }
