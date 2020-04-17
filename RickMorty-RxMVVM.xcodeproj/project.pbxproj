@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,17 @@
 		46E237542448CFBA00037951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E237522448CFBA00037951 /* Main.storyboard */; };
 		46E237562448CFBD00037951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E237552448CFBD00037951 /* Assets.xcassets */; };
 		46E237592448CFBD00037951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E237572448CFBD00037951 /* LaunchScreen.storyboard */; };
+		46E237632449B50700037951 /* EpisodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E237622449B50700037951 /* EpisodesViewModel.swift */; };
+		46E237662449B52F00037951 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E237642449B52F00037951 /* EpisodesViewController.swift */; };
+		46E237672449B52F00037951 /* EpisodesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46E237652449B52F00037951 /* EpisodesViewController.xib */; };
+		46E237692449B7C800037951 /* RemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E237682449B7C800037951 /* RemoteRepository.swift */; };
+		46E2376B2449B7E800037951 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E2376A2449B7E800037951 /* ApiManager.swift */; };
+		7B87EE7E9F609C61084AE94F /* Pods_RickMorty_RxMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7457C0AC8E7B27CD6DD60D /* Pods_RickMorty_RxMVVM.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28185CAE6965B0974B058479 /* Pods-RickMorty-RxMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMorty-RxMVVM.debug.xcconfig"; path = "Target Support Files/Pods-RickMorty-RxMVVM/Pods-RickMorty-RxMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		2D7457C0AC8E7B27CD6DD60D /* Pods_RickMorty_RxMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickMorty_RxMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E237492448CFBA00037951 /* RickMorty-RxMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RickMorty-RxMVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E2374C2448CFBA00037951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		46E2374E2448CFBA00037951 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,12 @@
 		46E237552448CFBD00037951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46E237582448CFBD00037951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46E2375A2448CFBD00037951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46E237622449B50700037951 /* EpisodesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewModel.swift; sourceTree = "<group>"; };
+		46E237642449B52F00037951 /* EpisodesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodesViewController.swift; sourceTree = "<group>"; };
+		46E237652449B52F00037951 /* EpisodesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodesViewController.xib; sourceTree = "<group>"; };
+		46E237682449B7C800037951 /* RemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRepository.swift; sourceTree = "<group>"; };
+		46E2376A2449B7E800037951 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		D4A365A53F176FBB5DA83213 /* Pods-RickMorty-RxMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMorty-RxMVVM.release.xcconfig"; path = "Target Support Files/Pods-RickMorty-RxMVVM/Pods-RickMorty-RxMVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B87EE7E9F609C61084AE94F /* Pods_RickMorty_RxMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +57,8 @@
 			children = (
 				46E2374B2448CFBA00037951 /* RickMorty-RxMVVM */,
 				46E2374A2448CFBA00037951 /* Products */,
+				4EC4667B3804E7ABCA4F9027 /* Pods */,
+				4BF51940ADD2A4B7BF7BA4AB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +80,30 @@
 				46E237552448CFBD00037951 /* Assets.xcassets */,
 				46E237572448CFBD00037951 /* LaunchScreen.storyboard */,
 				46E2375A2448CFBD00037951 /* Info.plist */,
+				46E237622449B50700037951 /* EpisodesViewModel.swift */,
+				46E237642449B52F00037951 /* EpisodesViewController.swift */,
+				46E237652449B52F00037951 /* EpisodesViewController.xib */,
+				46E237682449B7C800037951 /* RemoteRepository.swift */,
+				46E2376A2449B7E800037951 /* ApiManager.swift */,
 			);
 			path = "RickMorty-RxMVVM";
+			sourceTree = "<group>";
+		};
+		4BF51940ADD2A4B7BF7BA4AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D7457C0AC8E7B27CD6DD60D /* Pods_RickMorty_RxMVVM.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EC4667B3804E7ABCA4F9027 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				28185CAE6965B0974B058479 /* Pods-RickMorty-RxMVVM.debug.xcconfig */,
+				D4A365A53F176FBB5DA83213 /* Pods-RickMorty-RxMVVM.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +113,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46E2375D2448CFBD00037951 /* Build configuration list for PBXNativeTarget "RickMorty-RxMVVM" */;
 			buildPhases = (
+				52CD872944C2C5D6610DA5DC /* [CP] Check Pods Manifest.lock */,
 				46E237452448CFBA00037951 /* Sources */,
 				46E237462448CFBA00037951 /* Frameworks */,
 				46E237472448CFBA00037951 /* Resources */,
+				804F145E211864528D466AAD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,18 +168,65 @@
 			files = (
 				46E237592448CFBD00037951 /* LaunchScreen.storyboard in Resources */,
 				46E237562448CFBD00037951 /* Assets.xcassets in Resources */,
+				46E237672449B52F00037951 /* EpisodesViewController.xib in Resources */,
 				46E237542448CFBA00037951 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52CD872944C2C5D6610DA5DC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RickMorty-RxMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		804F145E211864528D466AAD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickMorty-RxMVVM/Pods-RickMorty-RxMVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RickMorty-RxMVVM/Pods-RickMorty-RxMVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RickMorty-RxMVVM/Pods-RickMorty-RxMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		46E237452448CFBA00037951 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				46E2376B2449B7E800037951 /* ApiManager.swift in Sources */,
+				46E237662449B52F00037951 /* EpisodesViewController.swift in Sources */,
+				46E237692449B7C800037951 /* RemoteRepository.swift in Sources */,
 				46E237512448CFBA00037951 /* ViewController.swift in Sources */,
+				46E237632449B50700037951 /* EpisodesViewModel.swift in Sources */,
 				46E2374D2448CFBA00037951 /* AppDelegate.swift in Sources */,
 				46E2374F2448CFBA00037951 /* SceneDelegate.swift in Sources */,
 			);
@@ -282,6 +370,7 @@
 		};
 		46E2375E2448CFBD00037951 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28185CAE6965B0974B058479 /* Pods-RickMorty-RxMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +388,7 @@
 		};
 		46E2375F2448CFBD00037951 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4A365A53F176FBB5DA83213 /* Pods-RickMorty-RxMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
