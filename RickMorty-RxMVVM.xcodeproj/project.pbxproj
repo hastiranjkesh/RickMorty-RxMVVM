@@ -17,6 +17,8 @@
 		46E2376D2449CCD600037951 /* EpisodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E2376C2449CCD600037951 /* EpisodeModel.swift */; };
 		46E2376E2449D3DA00037951 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E2376A2449B7E800037951 /* ApiManager.swift */; };
 		46E237702449D5FA00037951 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E2376F2449D5FA00037951 /* AppCoordinator.swift */; };
+		46E237732449E64600037951 /* EpisodeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E237712449E64600037951 /* EpisodeTableViewCell.swift */; };
+		46E237742449E64600037951 /* EpisodeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46E237722449E64600037951 /* EpisodeTableViewCell.xib */; };
 		7B87EE7E9F609C61084AE94F /* Pods_RickMorty_RxMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7457C0AC8E7B27CD6DD60D /* Pods_RickMorty_RxMVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +37,8 @@
 		46E2376A2449B7E800037951 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		46E2376C2449CCD600037951 /* EpisodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeModel.swift; sourceTree = "<group>"; };
 		46E2376F2449D5FA00037951 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		46E237712449E64600037951 /* EpisodeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeTableViewCell.swift; sourceTree = "<group>"; };
+		46E237722449E64600037951 /* EpisodeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodeTableViewCell.xib; sourceTree = "<group>"; };
 		D4A365A53F176FBB5DA83213 /* Pods-RickMorty-RxMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMorty-RxMVVM.release.xcconfig"; path = "Target Support Files/Pods-RickMorty-RxMVVM/Pods-RickMorty-RxMVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +86,8 @@
 				46E2376A2449B7E800037951 /* ApiManager.swift */,
 				46E2376C2449CCD600037951 /* EpisodeModel.swift */,
 				46E2376F2449D5FA00037951 /* AppCoordinator.swift */,
+				46E237712449E64600037951 /* EpisodeTableViewCell.swift */,
+				46E237722449E64600037951 /* EpisodeTableViewCell.xib */,
 			);
 			path = "RickMorty-RxMVVM";
 			sourceTree = "<group>";
@@ -164,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46E237592448CFBD00037951 /* LaunchScreen.storyboard in Resources */,
+				46E237742449E64600037951 /* EpisodeTableViewCell.xib in Resources */,
 				46E237562448CFBD00037951 /* Assets.xcassets in Resources */,
 				46E237672449B52F00037951 /* EpisodesViewController.xib in Resources */,
 			);
@@ -219,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				46E2376E2449D3DA00037951 /* ApiManager.swift in Sources */,
+				46E237732449E64600037951 /* EpisodeTableViewCell.swift in Sources */,
 				46E237662449B52F00037951 /* EpisodesViewController.swift in Sources */,
 				46E237692449B7C800037951 /* RemoteRepository.swift in Sources */,
 				46E237632449B50700037951 /* EpisodesViewModel.swift in Sources */,
