@@ -17,7 +17,8 @@
 		46E237662449B52F00037951 /* EpisodesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E237642449B52F00037951 /* EpisodesViewController.swift */; };
 		46E237672449B52F00037951 /* EpisodesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 46E237652449B52F00037951 /* EpisodesViewController.xib */; };
 		46E237692449B7C800037951 /* RemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E237682449B7C800037951 /* RemoteRepository.swift */; };
-		46E2376B2449B7E800037951 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E2376A2449B7E800037951 /* ApiManager.swift */; };
+		46E2376D2449CCD600037951 /* EpisodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E2376C2449CCD600037951 /* EpisodeModel.swift */; };
+		46E2376E2449D3DA00037951 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E2376A2449B7E800037951 /* ApiManager.swift */; };
 		7B87EE7E9F609C61084AE94F /* Pods_RickMorty_RxMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7457C0AC8E7B27CD6DD60D /* Pods_RickMorty_RxMVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,7 @@
 		46E237652449B52F00037951 /* EpisodesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EpisodesViewController.xib; sourceTree = "<group>"; };
 		46E237682449B7C800037951 /* RemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRepository.swift; sourceTree = "<group>"; };
 		46E2376A2449B7E800037951 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		46E2376C2449CCD600037951 /* EpisodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeModel.swift; sourceTree = "<group>"; };
 		D4A365A53F176FBB5DA83213 /* Pods-RickMorty-RxMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMorty-RxMVVM.release.xcconfig"; path = "Target Support Files/Pods-RickMorty-RxMVVM/Pods-RickMorty-RxMVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 				46E237652449B52F00037951 /* EpisodesViewController.xib */,
 				46E237682449B7C800037951 /* RemoteRepository.swift */,
 				46E2376A2449B7E800037951 /* ApiManager.swift */,
+				46E2376C2449CCD600037951 /* EpisodeModel.swift */,
 			);
 			path = "RickMorty-RxMVVM";
 			sourceTree = "<group>";
@@ -222,13 +225,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46E2376B2449B7E800037951 /* ApiManager.swift in Sources */,
+				46E2376E2449D3DA00037951 /* ApiManager.swift in Sources */,
 				46E237662449B52F00037951 /* EpisodesViewController.swift in Sources */,
 				46E237692449B7C800037951 /* RemoteRepository.swift in Sources */,
 				46E237512448CFBA00037951 /* ViewController.swift in Sources */,
 				46E237632449B50700037951 /* EpisodesViewModel.swift in Sources */,
 				46E2374D2448CFBA00037951 /* AppDelegate.swift in Sources */,
 				46E2374F2448CFBA00037951 /* SceneDelegate.swift in Sources */,
+				46E2376D2449CCD600037951 /* EpisodeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

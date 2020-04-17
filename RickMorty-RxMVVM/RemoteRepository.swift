@@ -15,4 +15,10 @@ final class RemoteRepository {
     init(apiManager: ApiManager) {
         self.apiManager = apiManager
     }
+    
+    func getEpisodes(path: String, completion: @escaping (Result<EpisodeList,NetworkError>) -> Void) {
+        apiManager.getData(path: path) { (data: Result<EpisodeList,NetworkError>) in
+            completion(data)
+        }
+    }
 }
