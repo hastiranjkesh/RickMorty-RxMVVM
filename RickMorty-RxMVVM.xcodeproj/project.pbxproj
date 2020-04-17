@@ -8,9 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		46E2374D2448CFBA00037951 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E2374C2448CFBA00037951 /* AppDelegate.swift */; };
-		46E2374F2448CFBA00037951 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E2374E2448CFBA00037951 /* SceneDelegate.swift */; };
-		46E237512448CFBA00037951 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E237502448CFBA00037951 /* ViewController.swift */; };
-		46E237542448CFBA00037951 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E237522448CFBA00037951 /* Main.storyboard */; };
 		46E237562448CFBD00037951 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 46E237552448CFBD00037951 /* Assets.xcassets */; };
 		46E237592448CFBD00037951 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46E237572448CFBD00037951 /* LaunchScreen.storyboard */; };
 		46E237632449B50700037951 /* EpisodesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E237622449B50700037951 /* EpisodesViewModel.swift */; };
@@ -19,6 +16,7 @@
 		46E237692449B7C800037951 /* RemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E237682449B7C800037951 /* RemoteRepository.swift */; };
 		46E2376D2449CCD600037951 /* EpisodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E2376C2449CCD600037951 /* EpisodeModel.swift */; };
 		46E2376E2449D3DA00037951 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E2376A2449B7E800037951 /* ApiManager.swift */; };
+		46E237702449D5FA00037951 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46E2376F2449D5FA00037951 /* AppCoordinator.swift */; };
 		7B87EE7E9F609C61084AE94F /* Pods_RickMorty_RxMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D7457C0AC8E7B27CD6DD60D /* Pods_RickMorty_RxMVVM.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,9 +25,6 @@
 		2D7457C0AC8E7B27CD6DD60D /* Pods_RickMorty_RxMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RickMorty_RxMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E237492448CFBA00037951 /* RickMorty-RxMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RickMorty-RxMVVM.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		46E2374C2448CFBA00037951 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		46E2374E2448CFBA00037951 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		46E237502448CFBA00037951 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		46E237532448CFBA00037951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		46E237552448CFBD00037951 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		46E237582448CFBD00037951 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		46E2375A2448CFBD00037951 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,6 +34,7 @@
 		46E237682449B7C800037951 /* RemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteRepository.swift; sourceTree = "<group>"; };
 		46E2376A2449B7E800037951 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
 		46E2376C2449CCD600037951 /* EpisodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EpisodeModel.swift; sourceTree = "<group>"; };
+		46E2376F2449D5FA00037951 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		D4A365A53F176FBB5DA83213 /* Pods-RickMorty-RxMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RickMorty-RxMVVM.release.xcconfig"; path = "Target Support Files/Pods-RickMorty-RxMVVM/Pods-RickMorty-RxMVVM.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -76,9 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				46E2374C2448CFBA00037951 /* AppDelegate.swift */,
-				46E2374E2448CFBA00037951 /* SceneDelegate.swift */,
-				46E237502448CFBA00037951 /* ViewController.swift */,
-				46E237522448CFBA00037951 /* Main.storyboard */,
 				46E237552448CFBD00037951 /* Assets.xcassets */,
 				46E237572448CFBD00037951 /* LaunchScreen.storyboard */,
 				46E2375A2448CFBD00037951 /* Info.plist */,
@@ -88,6 +81,7 @@
 				46E237682449B7C800037951 /* RemoteRepository.swift */,
 				46E2376A2449B7E800037951 /* ApiManager.swift */,
 				46E2376C2449CCD600037951 /* EpisodeModel.swift */,
+				46E2376F2449D5FA00037951 /* AppCoordinator.swift */,
 			);
 			path = "RickMorty-RxMVVM";
 			sourceTree = "<group>";
@@ -172,7 +166,6 @@
 				46E237592448CFBD00037951 /* LaunchScreen.storyboard in Resources */,
 				46E237562448CFBD00037951 /* Assets.xcassets in Resources */,
 				46E237672449B52F00037951 /* EpisodesViewController.xib in Resources */,
-				46E237542448CFBA00037951 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,10 +221,9 @@
 				46E2376E2449D3DA00037951 /* ApiManager.swift in Sources */,
 				46E237662449B52F00037951 /* EpisodesViewController.swift in Sources */,
 				46E237692449B7C800037951 /* RemoteRepository.swift in Sources */,
-				46E237512448CFBA00037951 /* ViewController.swift in Sources */,
 				46E237632449B50700037951 /* EpisodesViewModel.swift in Sources */,
 				46E2374D2448CFBA00037951 /* AppDelegate.swift in Sources */,
-				46E2374F2448CFBA00037951 /* SceneDelegate.swift in Sources */,
+				46E237702449D5FA00037951 /* AppCoordinator.swift in Sources */,
 				46E2376D2449CCD600037951 /* EpisodeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,14 +231,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		46E237522448CFBA00037951 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				46E237532448CFBA00037951 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		46E237572448CFBD00037951 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
